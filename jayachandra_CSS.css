@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid rgb(61, 61, 61); */
+    color: rgb(19, 18, 18);
+    font-weight: 600;
+}
+.body{
+    padding: 0;
+}
+.main-bg-container{
+    /* background-color: blue; */
+    padding: 5% 10%;
+    display: flex;
+    flex-direction: column;
+}
+.header{
+    border: 2px solid rgb(61, 61, 61);
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    
+    
+}
+.logo-img{
+    height: 100px;
+    width: 100px;
+    align-self: flex-start;
+    margin-right: 15px;
+}
+.header-text-container{
+    text-align: center;
+    flex-grow: 1;
+    margin-right: 45px;
+}
+.school-name{
+    font-weight: 600;
+    font-size: 28px;
+}
+.school-adress{
+    margin: 5px;
+    font-size: 15px;
+}
+.student-details-container{
+    width: 100%;
+    display: flex;
+    border: 2px solid rgb(61, 61, 61);
+    border-top: none;
+    
+}
+.details-row{
+    flex-grow: 1;
+}
+.student-details-item{
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    margin: 0;
+}
+.detail-name{
+    width: 50%;
+    margin: 0;
+}
+.details-value{
+    margin-left: 7px;
+}
+.table-main{
+    border: 2px solid black;
+    border-top: 0;
+    text-align: center;
+    
+}
+.table-bold-style{
+    border: 1px solid black;
+}
+.table-normal-style{
+    font-weight: 400;
+    border: 1px solid black;
+}

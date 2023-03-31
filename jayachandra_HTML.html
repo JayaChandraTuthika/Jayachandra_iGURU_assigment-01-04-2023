@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayachandra_iGuruAssignment</title>
+    <link rel="stylesheet" href="./jayachandra_CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div class="main-bg-container" id="root">
+        <div class="header">
+            <img src="" alt="School-logo" class="logo-img"/>
+            <div class="header-text-container">
+                <h1 class="school-name" id="schoolName">MAHARAJA INTERNATIONAL SCHOOL</h1>
+           <p class="school-adress" id="schoolAdress">Near Abhilasha Colony, Dewas Road, Affiliated to CBSE, Affiliation No:103131157, </p>
+           <p>Ph: <span id="schoolPhomeNo"></span></p>
+           
+           <p>Visit Us at: <a id="schoolEmail" href=""></a></p>
+           <p class="mt-4 mb-0">REPRT CARD</p>
+           <p class="m-0">ACADAMIC SESSION : 2022-2023</p>
+            </div>
+        </div>
+        <div class="student-details-container">
+            <div class="details-row">
+                <p class="student-details-item"><span class="detail-name">Scolar No</span>:- 
+                    <span class="roll-no-input" ></span>
+                </p>
+                <p class="student-details-item"><span class="detail-name">Roll No</span>:-  <span id="rollNumberInput" class="details-value"> </span></p>
+                <p class="student-details-item"><span class="detail-name">Fathers Name</span>:-<span id="fatherName" class="details-value"></span></p>
+                <p class="student-details-item"><span class="detail-name">Attendance</span>:-<span id="attendance" class="details-value"></span></p>
+            </div>
+            <div class="details-row">
+                <p class="student-details-item"><span class="detail-name">Class</span>:-<span id="className" class="details-value"></span></p>
+                <p class="student-details-item"><span class="detail-name">Name ofStudent</span>:-<span id="studentName" class="details-value"></span></p>
+                <p class="student-details-item"><span class="detail-name">Mother's Name</span>:-<span id="motherName" class="details-value"></span></p>
+                <p class="student-details-item"><span class="detail-name">Date of Birth</span>:-<span id="dateOfBirth" class="details-value"></span></p>
+            </div>
+        </div>
+        <table class="table-main" >
+            <tr>
+                <th rowspan="2" class="table-bold-style" >Subjects</th>
+                <th colspan="3" class="table-bold-style">Term 1</th>
+                <th colspan="3" class="table-bold-style">Term 2</th>
+                <th colspan="2" class="table-bold-style">Final Result</th>
+            </tr>
+            <tr>
+                <th class="table-bold-style">
+                    Best Score PT-I,II<br/>20
+                </th>
+                <th class="table-bold-style">
+                    Term I<br/>80
+                </th>
+                <th class="table-bold-style">
+                    Marks Obt.<br/>100
+                </th>
+                <th class="table-bold-style">
+                    Best Score PT-III,IV<br/>20
+                </th>
+                <th class="table-bold-style">
+                    Term I<br/>80
+                </th>
+                <th class="table-bold-style">
+                    Marks Obt.<br/>100
+                </th>
+                <th class="table-bold-style">
+                    T-i + T-II<br/>200
+                </th>
+                <th class="table-bold-style">
+                    Grade
+                </th>
+            </tr>
+            <tr>
+                <th class="table-bold-style">ENGLISH</th>
+                <td class="table-normal-style" id="englishInternal1"></td>
+                <td class="table-normal-style" id="englishTerm1"></td>
+                <td class="table-normal-style" id="marksTotalEnglish1"></td>
+                <td class="table-normal-style" id="englishInternal2"></td>
+                <td class="table-normal-style" id="englishTerm2"></td>
+                <td class="table-normal-style" id="marksTotalEnglish2"></td>
+                <td class="table-normal-style" id="finalEnglishTotal"></td>
+                <td class="table-normal-style" id="finalEnglishGrade"></td>
+            </tr>
+            <tr>
+                <th class="table-bold-style">HINDI</th>
+                <td class="table-normal-style" id="hindiInternal1"></td>
+                <td class="table-normal-style" id="hindiTerm1"></td>
+                <td class="table-normal-style" id="marksTotalHindi1"></td>
+                <td class="table-normal-style" id="hindiInternal2"></td>
+                <td class="table-normal-style" id="hindiTerm2"></td>
+                <td class="table-normal-style" id="marksTotalHindi2"></td>
+                <td class="table-normal-style" id="finalHindiTotal"></td>
+                <td class="table-normal-style" id="finalHindiGrade"></td>
+            </tr>
+            <tr>
+                <th class="table-bold-style">MATHS</th>
+                <td class="table-normal-style" id="mathsInternal1"></td>
+                <td class="table-normal-style" id="mathsTerm1"></td>
+                <td class="table-normal-style" id="marksTotalMaths1"></td>
+                <td class="table-normal-style" id="mathsInternal2"></td>
+                <td class="table-normal-style" id="mathsTerm2"></td>
+                <td class="table-normal-style" id="marksTotalMaths2"></td>
+                <td class="table-normal-style" id="finalMathsTotal"></td>
+                <td class="table-normal-style" id="finalMathsGrade"></td>
+            </tr>
+            <tr>
+                <th class="table-bold-style">TOTAL</th>
+                <td class="table-bold-style" id="tcInternals1"></td>
+                <td class="table-bold-style" id="tcTerm1">45</td>
+                <td class="table-bold-style" id="tcSem1">60</td>
+                <td class="table-bold-style" id="tcInternals2">15</td>
+                <td class="table-bold-style" id="tcTerm2">45</td>
+                <td  class="table-bold-style" id="tcSem2">60</td>
+                <td class="table-normal-style" id="tcFinalMarks">133</td>
+                <td class="table-normal-style" id="tcGrade">B2</td>
+            </tr>
+            <tr class="result-row" height="50">
+                <th colspan="3">Results: PASS</th>
+                <th colspan="3">Percentage: <span id="percentage"></span>%</th>
+                <th colspan="3">Grade: <span id="studentGradeOverall"></span></th>
+            </tr>
+            <tr>
+                <th colspan="3" class="table-bold-style">Parents</th>
+                <th colspan="3" class="table-bold-style">Class Teacher</th>
+                <th colspan="3" class="table-bold-style">Principal</th>
+            </tr>
+            <tr>
+                <td colspan="3" class="table-normal-style" height="70">
+
+                </td>
+                <td colspan="3" class="table-normal-style" height="70">
+
+                </td>
+                <td colspan="3" class="table-normal-style" height="70">
+                
+
+                </td>
+            </tr>
+            
+        </table>
+
+    </div>
+    <script src="jayachandra_Script.js">
+    </script>
+</body>
+</html>
