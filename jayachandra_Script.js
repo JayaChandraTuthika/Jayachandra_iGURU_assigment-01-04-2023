@@ -222,10 +222,10 @@ const showDetails = (progressReport) => {
 
 
 const getStudentDetails = async () => {
-    const response = await fetch('http://stageapi.iguru.guru:222/api/ExamManagement/GetStudentProgressReports?schoolID=282&sectionID=2682&eXamMasID=8442&students=181521');
+    const response = await fetch('https://api.scraperapi.com?api_key=9fe1d3eee71986e6e0a3c20aca8c9c7d&url=http://stageapi.iguru.guru:222/api/ExamManagement/GetStudentProgressReports?schoolID=282&sectionID=2682&eXamMasID=8442&students=181521');
     const data = await response.json()
     const progressReport = data.Response.ProgressList
-    // console.log(progressReport)
+    console.log(progressReport)
     showDetails(progressReport)
 }
 
